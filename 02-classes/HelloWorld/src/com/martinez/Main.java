@@ -7,4 +7,10 @@ public class Main {
         int extraHours = 10;
         int hourlyRate = 20;
     }
+
+    public static int calculateWage(
+            int baseSalary,
+            int extraHours,
+            int hourlyRate
+    )
 }
