@@ -1,13 +1,5 @@
 package com.martinez;
 
-/**
- * Issues with Procedual Programming (as the code below) is that:
- * 1) Main method will get bloated with bunch of variables and functions
- * 2) Functions/methods will have too many arguments
- * 3) Lack of reusability
- * 4) You change one thing and then other code will break (SPAGHETTI CODE)
- */
-
 public class Main {
 
     public static void main(String[] args) {
