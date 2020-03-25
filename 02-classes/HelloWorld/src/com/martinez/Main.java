@@ -1,11 +1,10 @@
 package com.martinez;
 
-import org.w3c.dom.Text;
-
 public class Main {
 
     public static void main(String[] args) {
-        var textBox1 = new Text();
-        var textBox2 = textBox1;
+        int baseSalary = 50_000;
+        int extraHours = 10;
+        int hourlyRate = 20;
     }
 }
