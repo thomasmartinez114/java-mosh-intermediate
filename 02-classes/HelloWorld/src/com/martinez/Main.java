@@ -12,5 +12,7 @@ public class Main {
             int baseSalary,
             int extraHours,
             int hourlyRate
-    )
+    ) {
+        return baseSalary + (extraHours * hourlyRate);
+    }
 }
