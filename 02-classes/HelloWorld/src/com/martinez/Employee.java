@@ -1,7 +1,7 @@
 package com.martinez;
 
 public class Employee {
-    public int baseSalary;
+    private int baseSalary;
     public int hourlyRate;
 
     // Declare calculateWage method
