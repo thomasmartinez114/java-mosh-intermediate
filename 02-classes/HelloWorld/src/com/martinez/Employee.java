@@ -9,9 +9,21 @@ public class Employee {
         return baseSalary + (hourlyRate * extraHours);
     }
 
+    /**
+     * Setter
+     * @param baseSalary
+     */
     public void setBaseSalary(int baseSalary) {
         if (baseSalary <= 0)
             throw new IllegalArgumentException("Salary cannot be 0 or less.");
         this.baseSalary = baseSalary;
+    }
+
+    /**
+     * Getter
+     * @return
+     */
+    public int getBaseSalary() {
+        return baseSalary;
     }
 }
