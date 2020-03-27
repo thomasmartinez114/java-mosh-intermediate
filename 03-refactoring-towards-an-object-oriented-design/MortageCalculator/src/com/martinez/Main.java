@@ -4,7 +4,7 @@
 // Period (Years)
 // Return Mortage rate (monthly): $###.##
 // Formula used is:
-// M = (P(r(1+r)^n)/((1+r)^n)-1)
+// M = (P(r(1+r)^n)/((1+r)^
 
 package com.martinez;
 
@@ -31,7 +31,7 @@ public class Main {
         String formattedMortage = NumberFormat.getCurrencyInstance().format(mortage);
         System.out.println();
         System.out.println("MORTAGE");
-        System.out.println("--------");
+        System.out.println("-----------");
         System.out.println("Mortage is: " + formattedMortage);
     }
 
