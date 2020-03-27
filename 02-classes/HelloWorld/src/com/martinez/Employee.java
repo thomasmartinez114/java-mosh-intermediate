@@ -4,11 +4,10 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
-    // Declare constructor
-    public Employee(int baseSalary) {
-        this(baseSalary, 0);
-    }
+    // Declare static fields
+    public static int numberOfEmployees;
 
+    // Declare constructor
     public Employee(int baseSalary, int hourlyRate) {
         // initialize the fields
         setBaseSalary(baseSalary);
@@ -30,7 +29,7 @@ public class Employee {
     }
 
     private void setHourlyRate(int hourlyRate) {
-        if (hourlyRate < 0)
+        if (hourlyRate <= 0)
             throw new IllegalArgumentException("Hourly Rate cannot be 0 or less.");
         this.hourlyRate = hourlyRate;
     }
