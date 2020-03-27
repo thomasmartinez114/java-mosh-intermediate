@@ -6,7 +6,9 @@ public class Employee {
 
     // Declare constructor
     public Employee(int baseSalary, int hourlyRate) {
-
+        // initialize the fields
+        setBaseSalary(baseSalary);
+        setHourlyRate(hourlyRate);
     }
 
     // Declare calculateWage method
