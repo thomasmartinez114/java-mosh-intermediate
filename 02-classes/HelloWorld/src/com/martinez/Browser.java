@@ -11,7 +11,7 @@ public class Browser {
         return "<html></html>";
     }
 
-    private String findIpAddress(address) {
+    private String findIpAddress(String address) {
         return "127.0.0.1";
     }
 }
