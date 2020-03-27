@@ -12,6 +12,7 @@ public class Employee {
         // initialize the fields
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        numberOfEmployees++;
     }
 
     public int calculateWage(int extraHours) {
