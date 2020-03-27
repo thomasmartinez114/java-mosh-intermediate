@@ -7,6 +7,10 @@ public class Employee {
     // Declare static fields
     public static int numberOfEmployees;
 
+    public Employee(int baseSalary) {
+        this(baseSalary, 0);
+    }
+
     // Declare constructor
     public Employee(int baseSalary, int hourlyRate) {
         // initialize the fields
@@ -15,8 +19,12 @@ public class Employee {
         numberOfEmployees++;
     }
 
+    public static void printNumberOfEmployees() {
+        System.out.println(numberOfEmployees);
+    }
+
     public int calculateWage(int extraHours) {
-        return baseSalary + (hourlyRate * extraHours);
+        return baseSalary + (getHourlyRate() * extraHours);
     }
 
     private void setBaseSalary(int baseSalary) {
