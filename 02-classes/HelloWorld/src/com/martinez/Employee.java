@@ -4,6 +4,11 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
+    // Declare constructor
+    public Employee(int baseSalary, int hourlyRate) {
+
+    }
+
     // Declare calculateWage method
     public int calculateWage(int extraHours) {
         return baseSalary + (hourlyRate * extraHours);
