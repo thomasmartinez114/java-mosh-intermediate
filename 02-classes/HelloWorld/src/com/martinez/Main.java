@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         var browser = new Browser();
+        browser.
 
 //        var employee = new Employee();
 //        employee.setBaseSalary(50_000);
