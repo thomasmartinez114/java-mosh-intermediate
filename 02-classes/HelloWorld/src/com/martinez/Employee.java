@@ -5,37 +5,36 @@ public class Employee {
     private int hourlyRate;
 
     // Declare constructor
+    public Employee(int baseSalary) {
+        this(baseSalary, 0);
+    }
+
     public Employee(int baseSalary, int hourlyRate) {
         // initialize the fields
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
     }
 
-    // Declare calculateWage method
     public int calculateWage(int extraHours) {
         return baseSalary + (hourlyRate * extraHours);
     }
 
-    // Setter
     private void setBaseSalary(int baseSalary) {
         if (baseSalary <= 0)
             throw new IllegalArgumentException("Salary cannot be 0 or less.");
         this.baseSalary = baseSalary;
     }
 
-    // Getter
     private int getBaseSalary() {
         return baseSalary;
     }
 
-    // Setter
     private void setHourlyRate(int hourlyRate) {
-        if (hourlyRate <= 0)
+        if (hourlyRate < 0)
             throw new IllegalArgumentException("Hourly Rate cannot be 0 or less.");
         this.hourlyRate = hourlyRate;
     }
 
-    // Getter
     private int getHourlyRate() {
         return hourlyRate;
     }
