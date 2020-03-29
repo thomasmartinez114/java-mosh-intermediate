@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 
 public class MortageReport {
     private static void printMortage(int principal, float annualInterest, byte years) {
-        double mortage = calculateMortage(principal, annualInterest, years);
+        double mortage = Main.calculateMortage(principal, annualInterest, years);
         String formattedMortage = NumberFormat.getCurrencyInstance().format(mortage);
         System.out.println();
         System.out.println("MORTAGE");
