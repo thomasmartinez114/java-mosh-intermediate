@@ -25,15 +25,6 @@ public class Main {
         printPaymentSchedule(principal, annualInterest, years);
     }
 
-    private static void printMortage(int principal, float annualInterest, byte years) {
-        double mortage = calculateMortage(principal, annualInterest, years);
-        String formattedMortage = NumberFormat.getCurrencyInstance().format(mortage);
-        System.out.println();
-        System.out.println("MORTAGE");
-        System.out.println("-----------");
-        System.out.println("Mortage is: " + formattedMortage);
-    }
-
     private static void printPaymentSchedule(int principal, float annualInterest, byte years) {
         System.out.println();
         System.out.println("PAYMENT SCHEDULE");
