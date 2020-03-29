@@ -20,9 +20,9 @@ public class Main {
         float annualInterest = (float) Console.readNumber("Annual Interest Rate: ", 1, 30);
         byte years = (byte) Console.readNumber("Length of Loan (Years): ", 1, 30);
 
-        printMortage(principal, annualInterest, years);
+        MortageReport.printMortage(principal, annualInterest, years);
 
-        printPaymentSchedule(principal, annualInterest, years);
+        MortageReport.printPaymentSchedule(principal, annualInterest, years);
     }
 
     public static double calculateBalance(
