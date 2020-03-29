@@ -8,7 +8,6 @@
 
 package com.martinez;
 
-import java.util.Scanner;
 import java.text.NumberFormat;
 
 
@@ -17,9 +16,9 @@ public class Main {
     final static byte PERCENT = 100;
 
     public static void main(String[] args) {
-        int principal = (int) readNumber("Principal: ", 1000, 1_000_000);
-        float annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
-        byte years = (byte) readNumber("Length of Loan (Years): ", 1, 30);
+        int principal = (int) Console.readNumber("Principal: ", 1000, 1_000_000);
+        float annualInterest = (float) Console.readNumber("Annual Interest Rate: ", 1, 30);
+        byte years = (byte) Console.readNumber("Length of Loan (Years): ", 1, 30);
 
         printMortage(principal, annualInterest, years);
 
@@ -43,19 +42,6 @@ public class Main {
             double balance = calculateBalance(principal, annualInterest, years, month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }
-    }
-
-    public static double readNumber(String prompt, double min, double max) {
-        Scanner scanner = new Scanner(System.in);
-        double value;
-        while (true) {
-            System.out.print(prompt);
-            value = scanner.nextFloat();
-            if (value >= min && value <= max)
-                break;
-            System.out.println("Enter a number between " + min + " and " + max);
-        }
-        return value;
     }
 
     public static double calculateBalance(
