@@ -20,8 +20,10 @@ public class Main {
         float annualInterest = (float) Console.readNumber("Annual Interest Rate: ", 1, 30);
         byte years = (byte) Console.readNumber("Length of Loan (Years): ", 1, 30);
 
-        MortageReport.printMortage(principal, annualInterest, years);
+        var calculator = new MortgageCalculator(principal, annualInterest, years);
 
-        MortageReport.printPaymentSchedule(principal, annualInterest, years);
+        var report = new MortgageReport(calculator);
+        report.printMortgage();
+        report.printPaymentSchedule();
     }
 }
