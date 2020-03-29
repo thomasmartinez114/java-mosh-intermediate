@@ -5,6 +5,12 @@ public class MortageCalculator {
     private float annualInterest;
     private byte years;
 
+    public MortageCalculator(int principal, float annualInterest, byte years){
+        this.principal = principal;
+        this.annualInterest = annualInterest;
+        this.years = years;
+    }
+
     public static double calculateBalance(
             int principal,
             float annualInterest,
