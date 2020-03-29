@@ -12,9 +12,6 @@ public class MortageCalculator {
     }
 
     public static double calculateBalance(
-            int principal,
-            float annualInterest,
-            byte years,
             short numOfPaymentsMade // short because # can be over 300 - byte can only store 256
     ) {
         float monthlyInterest = annualInterest / Main.PERCENT / Main.MONTHS_IN_YEAR;
