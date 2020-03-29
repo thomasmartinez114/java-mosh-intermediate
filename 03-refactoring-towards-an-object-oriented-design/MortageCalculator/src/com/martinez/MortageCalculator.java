@@ -23,11 +23,7 @@ public class MortageCalculator {
         return balance;
     }
 
-    public static double calculateMortage(
-            int principal,
-            float annualInterest,
-            byte years) {
-
+    public double calculateMortage() {
         float monthlyInterest = annualInterest / Main.PERCENT / Main.MONTHS_IN_YEAR;
         short numPayments = (short) (Main.MONTHS_IN_YEAR * years);
 
