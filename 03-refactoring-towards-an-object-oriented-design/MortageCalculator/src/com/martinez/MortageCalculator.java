@@ -1,6 +1,10 @@
 package com.martinez;
 
 public class MortageCalculator {
+    private int principal;
+    private float annualInterest;
+    private byte years;
+
     public static double calculateBalance(
             int principal,
             float annualInterest,
