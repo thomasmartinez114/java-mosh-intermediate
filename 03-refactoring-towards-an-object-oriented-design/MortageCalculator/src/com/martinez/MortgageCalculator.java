@@ -39,7 +39,7 @@ public class MortgageCalculator {
 
     public double[] getRemainingBalances() {
         var balances = new double[getNumOfPayments()];
-        for (short month = 1; balances.length; month++)
+        for (short month = 1; month <= balances.length; month++)
             balances[month - 1] = calculateBalance(month);
 
         return balances;
@@ -49,7 +49,7 @@ public class MortgageCalculator {
         return annualInterest / PERCENT / MONTHS_IN_YEAR;
     }
 
-    private float getNumOfPayments() {
+    private int getNumOfPayments() {
         return years * MONTHS_IN_YEAR;
     }
 }
