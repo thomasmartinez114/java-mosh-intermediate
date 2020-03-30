@@ -14,12 +14,8 @@ public class MortgageCalculator {
         this.years = years;
     }
 
-    private float getMonthlyInterest() {
-        return annualInterest / PERCENT / MONTHS_IN_YEAR;
-    }
-
     public double calculateBalance(short numOfPaymentsMade) {
-        float monthlyInterest = ;
+        float monthlyInterest = getMonthlyInterest();
         short numPayments = (short) (MONTHS_IN_YEAR * years);
 
         // B = L[(1 + c)^n - (1 + c)^p] / [(1 + c)^n - 1]
@@ -31,7 +27,7 @@ public class MortgageCalculator {
     }
 
     public double calculateMortgage() {
-        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+        float monthlyInterest = getMonthlyInterest();
         short numPayments = (short) (MONTHS_IN_YEAR * years);
 
         double mortgage = principal
@@ -39,6 +35,10 @@ public class MortgageCalculator {
                 / (Math.pow(1 + monthlyInterest, numPayments) - 1));
 
         return mortgage;
+    }
+
+    private float getMonthlyInterest() {
+        return annualInterest / PERCENT / MONTHS_IN_YEAR;
     }
 
     public short getYears() {
