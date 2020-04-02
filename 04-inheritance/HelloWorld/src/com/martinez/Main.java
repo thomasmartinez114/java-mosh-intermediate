@@ -3,8 +3,9 @@ package com.martinez;
 public class Main {
 
     public static void main(String[] args) {
-        var control = new TextBox();
-        control.disable();
-        System.out.println(control.isEnabled());
+        var box1 = new TextBox();
+        var box2 = box1;
+        System.out.println(box1.hashCode());
+        System.out.println(box2.hashCode());
     }
 }
