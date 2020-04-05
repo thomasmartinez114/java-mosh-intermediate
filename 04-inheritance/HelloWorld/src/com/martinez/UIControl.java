@@ -1,7 +1,7 @@
 package com.martinez;
 
 public class UIControl {
-    protected boolean isEnabled = true;
+    private boolean isEnabled = true;
 
     public UIControl(boolean isEnabled) {
         this.isEnabled = isEnabled;
