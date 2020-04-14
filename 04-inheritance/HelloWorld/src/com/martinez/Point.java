@@ -8,4 +8,11 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        // Downcast Object to the Point class
+        var other = (Point)obj;
+        return other.x == x && other.y == y;
+    }
 }
