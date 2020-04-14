@@ -1,5 +1,7 @@
 package com.martinez;
 
+import java.util.Objects;
+
 public class Point {
     private int x;
     private int y;
@@ -22,6 +24,6 @@ public class Point {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(x, y);
     }
 }
