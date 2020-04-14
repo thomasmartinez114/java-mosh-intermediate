@@ -9,7 +9,7 @@ public class UIControl {
 //    }
 
     public void render() {
-        
+
     }
 
     public void enable() {
