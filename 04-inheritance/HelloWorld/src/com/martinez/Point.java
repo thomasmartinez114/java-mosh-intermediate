@@ -19,4 +19,9 @@ public class Point {
         var other = (Point) obj;
         return other.x == x && other.y == y;
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
