@@ -2,7 +2,7 @@ package com.martinez;
 
 public class Point {
     private int x;
-    private in y;
+    private int y;
 
     public Point(int x, int y) {
         this.x = x;
