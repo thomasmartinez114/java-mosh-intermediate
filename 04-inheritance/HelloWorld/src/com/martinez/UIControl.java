@@ -8,6 +8,10 @@ public class UIControl {
 ////        System.out.println("UIControl");
 //    }
 
+    public void render() {
+        
+    }
+
     public void enable() {
         isEnabled = true;
     }
