@@ -1,6 +1,6 @@
 package com.martinez;
 
-public class UIControl {
+public abstract class UIControl {
     private boolean isEnabled = true;
 
 //    public UIControl(boolean isEnabled) {
@@ -8,11 +8,9 @@ public class UIControl {
 ////        System.out.println("UIControl");
 //    }
 
-    public void render() {
+    public abstract void render();
 
-    }
-
-    public void enable() {
+    public final void enable() {
         isEnabled = true;
     }
 
