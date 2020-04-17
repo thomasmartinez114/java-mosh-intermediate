@@ -8,6 +8,7 @@ public class TaxCalculator2020 implements TaxCalculator {
     }
 
     @Override
+    // Telling this method is overriding/implementing Interface method
     public double calculateTax() {
         return taxableIncome * 0.4;
     }
