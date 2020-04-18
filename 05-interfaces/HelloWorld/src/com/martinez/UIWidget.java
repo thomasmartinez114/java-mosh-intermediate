@@ -1,7 +1,6 @@
 package com.martinez;
 
-public interface UIWidget extends Draggable {
-    void resize();
+public interface UIWidget extends Draggable, Resizable {
     void render();
 }
 
