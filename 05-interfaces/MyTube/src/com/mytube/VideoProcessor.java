@@ -2,7 +2,7 @@ package com.mytube;
 
 public class VideoProcessor {
     public void process(Video video) {
-        var encoder = new VideoEncoder();
+        var encoder = new XVideoEncoder();
         encoder.encode(video);
 
         var database = new VideoDatabase();
