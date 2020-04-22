@@ -8,7 +8,6 @@ public class VideoProcessor {
     private VideoEncoder encoder;
 
     public void process(Video video) {
-        var encoder = new XVideoEncoder();
         encoder.encode(video);
 
         var database = new VideoDatabase();
