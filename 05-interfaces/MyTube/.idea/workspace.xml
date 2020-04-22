@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4985e54c-4ccd-4e18-9db0-7885af01bc39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/mytube/VideoProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mytube/VideoProcessor.java" afterDir="false" />
-    </list>
+    <list default="true" id="4985e54c-4ccd-4e18-9db0-7885af01bc39" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +66,7 @@
       <updated>1561581936501</updated>
       <workItem from="1587188766884" duration="4323000" />
       <workItem from="1587519441432" duration="809000" />
-      <workItem from="1587525442620" duration="364000" />
+      <workItem from="1587525442620" duration="1048000" />
     </task>
     <servers />
   </component>
