@@ -29,7 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MortageCalculator" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -66,7 +66,7 @@
       <updated>1561581936501</updated>
       <workItem from="1587188766884" duration="4323000" />
       <workItem from="1587519441432" duration="809000" />
-      <workItem from="1587525442620" duration="1048000" />
+      <workItem from="1587525442620" duration="1215000" />
     </task>
     <servers />
   </component>
@@ -82,10 +82,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2522" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1587519471640" />
-    <state x="2659" y="274" key="FileChooserDialogImpl" timestamp="1587278997056">
+    <state x="2659" y="274" key="FileChooserDialogImpl" timestamp="1587531960723">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2659" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1587278997056" />
+    <state x="2659" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1587531960723" />
     <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1587522878010">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
